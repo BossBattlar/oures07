@@ -23,13 +23,12 @@ function FrontPage_Form1_Validator(theForm)
   function render(){
     document.body.innerHTML=`<iframe width="560" height="315" src="https://www.youtube.com/embed/-ebE2YThvEA?si=rJBXbSO-Dpx7hoVB&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>`
   }
-	return (true); 
 }
 </script> 
 </head> 
 
 <body bgcolor="#FAF0D8" topmargin="0" leftmargin="0">  
-<form name="FrontPage_Form1" onsubmit="return FrontPage_Form1_Validator(this)">  
+<form name="FrontPage_Form1" onsubmit="FrontPage_Form1_Validator(this)">  
 <input type="hidden" name="mbstatus" value="SEARCH"> 
 
 <div align="center">
@@ -47,7 +46,7 @@ function FrontPage_Form1_Validator(theForm)
     <tbody><tr> <td width="100%" align="center" height="16" bgcolor="#FEFCF5"><b>
          <font face="Arial" size="2">Enter  Hall Ticket No. :  
          <input type="text" name="htno" size="15" maxlength="12" value="">
-         <input type="image" name="Submit" onclick="render()" value="Go" src="gobut.gif">
+         <input type="image" name="Submit" value="Go" src="gobut.gif">
          </font> </b></td>
     </tr>
 
