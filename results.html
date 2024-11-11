@@ -1,0 +1,65 @@
+<html><head>
+<title>Osmania University Results - 2024</title>
+<script language="JavaScript">
+function FrontPage_Form1_Validator(theForm)
+{
+	if (theForm.htno.value == "") { 
+	  alert("Please enter a value for the \"Hall ticket Number\" field."); 
+	  theForm.htno.focus(); 
+	  return (false); 
+	}
+
+	if (theForm.htno.value.length <  12 )   {
+	  alert("Please enter at least   12 characters in the \"Hall ticket Number\" field.");  
+	  theForm.htno.focus(); 
+	  return (false); 
+	}
+
+	if (theForm.htno.value.length >  12 )   { 
+	  alert("Please enter not more than  12  characters in the \"Hall ticket Number\" field.");  
+	  theForm.htno.focus(); 
+	  return (false); 
+	}
+  function render(){
+    document.body.innerHTML=`<iframe width="560" height="315" src="https://www.youtube.com/embed/-ebE2YThvEA?si=rJBXbSO-Dpx7hoVB&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>`
+  }
+	return (true); 
+}
+</script> 
+</head> 
+
+<body bgcolor="#FAF0D8" topmargin="0" leftmargin="0">  
+<form method="post" action="20240527.jsp" name="FrontPage_Form1" onsubmit="return FrontPage_Form1_Validator(this)">  
+<input type="hidden" name="mbstatus" value="SEARCH"> 
+
+<div align="center">
+<center>
+<table border="0" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="90%" id="AutoNumber1">  
+  <tbody><tr><td width="100%"> 
+    <p align="center"><font face="Arial" size="2"><b> BE AICTE (Regular &amp; supply) CBCS (Backlog) Aug/Sept 2024 examination results </b></font></p></td></tr>   
+  <tr><td width="100%">  <p align="right"><font face="Arial" size="1">29-May-2024 </font></p></td>  </tr>
+
+  
+
+
+<tr> <td width="100%"> <div align="center"> <center>
+   <table border="1" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="80%" id="AutoNumber6" height="19">
+    <tbody><tr> <td width="100%" align="center" height="16" bgcolor="#FEFCF5"><b>
+         <font face="Arial" size="2">Enter  Hall Ticket No. :  
+         <input type="text" name="htno" size="15" maxlength="12" value="">
+         <input type="image" name="Submit" onclick="render()" value="Go" src="gobut.gif">
+         </font> </b></td>
+    </tr>
+
+    <tr><td width="100%" align="center">
+        <font face="verdana" size="2" color="#FF0000"><b> Please Enter  12 Digit Hall Ticket Number
+        Ex: 161022749301,  161022748302.  </b></font></td>
+    </tr>
+    </tbody></table>  </center>  </div>  </td>
+  </tr>
+
+  </tbody></table>  </center></div> </form>
+
+
+
+</body></html>
